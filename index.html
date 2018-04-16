@@ -2,40 +2,55 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
         <link rel="stylesheet" type="text/css" href="indexstyle.css">
+
         <title>GloryK Home</title>
     </head>
 
     <body>
 
-        <header>
+        <header class="container-fluid">
             GloryK Home
         </header>
 
-        <nav>
-            <button>
-                Movie 1
-            </button>
-            
-            <br>
-    
-            <button>
-                Movie 2
-            </button>
-    
-            <br>
-    
-            <button>
-                Movie 3
-            </button>
-        </nav>
-
-        <article>
-            Empty for now :)
-        </article>
+        <div class="container-fluid row">
+            <div class="col-sm-3 sidenav">
+                <ul class="nav flex-column nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section1">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section2">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section3">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section4">Movies</a>
+                    </li>
+                </ul>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search Blog..">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
+                </div>
+            </div>
+            <article class="col-sm-9">
+                Contents
+            </article>
+        </div>
 
         <footer>
             Copyright 2018. Glory Kim all rights reserved.
         </footer>
     </body>
-</html> 
+</html>
